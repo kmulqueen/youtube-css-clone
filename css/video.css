@@ -167,6 +167,40 @@ main {
     grid-area: related-videos;
 }
 
+.related-videos > header {
+    padding: 1.14285714286em 0.85714285714em;
+    font-size: 1.4rem;
+    display: grid;
+    grid: 1fr / 1fr repeat(2, max-content);
+    column-gap: 0.5em;
+    align-items: center;
+}
+
+.related-videos > header button {
+    border: 0;
+    outline: none;
+    background: transparent;
+    position: relative;
+}
+
+.autoplay-slider {
+    display: block;
+    width: 3.7rem;
+    border: 7px solid rgba(26,89,156, 0.38);
+    border-radius: 7px;
+}
+
+.autoplay-slider-toggle-button {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: -3px;
+    border-radius: 100%;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
 .video-comments {
     grid-area: video-comments;
 }
