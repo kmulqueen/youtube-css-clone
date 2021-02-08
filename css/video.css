@@ -12,3 +12,35 @@ html {
     font-size: 10px;
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+body {
+    display: grid;
+    grid: "header" auto "main" 1fr / 1fr;
+}
+
+body > header {
+    padding: 0 0.8em;
+    background: #1a599c;
+    color: #fff;
+    display:grid;
+    grid: 1fr / max-content 1fr repeat(2, max-content);
+    column-gap: 1.2em;
+    align-items: center;
+    padding: 1em;
+}
+
+body > header > a {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+.search-videos-icon,
+.settings-icon {
+    padding-left: 0.4em;
+    width: 2.8rem;
+}
