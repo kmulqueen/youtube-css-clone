@@ -55,6 +55,11 @@ main {
     grid-area: video-thumbnail;
 }
 
+.video-thumbnail > img {
+    width: 100%;
+    height: 100%;
+}
+
 .video-details {
     grid-area: video-details;
 }
