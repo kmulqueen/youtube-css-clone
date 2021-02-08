@@ -13,14 +13,21 @@ html {
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+body {
+    display: grid;
+    grid: "header" auto "main" 1fr / 1fr;
+}
+
 h1 {
     font-size: 1.5rem;
     font-weight: normal;
 }
 
-body {
-    display: grid;
-    grid: "header" auto "main" 1fr / 1fr;
+h2 {
+    font-size: 1.8rem;
+    line-height: 1.25em;
+    margin-bottom: 0.1666666em;
+    font-weight: normal;
 }
 
 body > header {
@@ -62,6 +69,43 @@ main {
 
 .video-details {
     grid-area: video-details;
+    padding-top: 1.2em;
+}
+
+.video-details > header {
+    padding: 0 1.2em;
+}
+
+.video-details__views-count {
+    font-size: 1.2rem;
+    color: rgba(17, 17, 17, 0.6);
+}
+
+.cta-container {
+    padding: 1.2em 0;
+    display: grid;
+    grid: 1fr / repeat(5, 1fr);
+}
+
+.cta-item {
+    color: rgba(17, 17, 17, 0.6);
+    display: grid;
+    row-gap: 0.7em;
+    place-items: center;
+}
+
+.cta-item.active {
+    color: #1a599c;
+}
+
+.cta-item > img {
+    width: 2.4rem;
+    height: 2.4rem;
+    cursor: pointer;
+}
+
+.cta-item > p {
+    font-size: 1.2rem;
 }
 
 .related-videos {
