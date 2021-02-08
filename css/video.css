@@ -30,6 +30,17 @@ h2 {
     font-weight: normal;
 }
 
+h3 {
+    font-size: 1.4rem;
+    line-height: 1.25em;
+    margin-bottom: 0.21428571428em;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
 body > header {
     padding: 0 0.8em;
     background: #1a599c;
@@ -106,6 +117,50 @@ main {
 
 .cta-item > p {
     font-size: 1.2rem;
+}
+
+.channel-details {
+    padding: 1.2em;
+    border-top: 1px solid rgba(136, 136, 136, 0.4);
+    border-bottom: 1px solid rgba(136, 136, 136, 0.4);
+    display: grid;
+    grid: 1fr / 1fr max-content;
+    column-gap: 0.7em;
+    align-items: center;
+}
+
+.channel-details > a {
+    display: grid;
+    grid: 1fr / max-content 1fr;
+    column-gap: 0.7em;
+    align-items: center;
+}
+
+.channel-details img {
+    width: 3.4rem;
+    height: 3.4rem;
+}
+
+.channel-subscriber-count {
+    color: rgba(17, 17, 17, 0.6);
+    font-size: 1.2rem;
+}
+
+.channel-details button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 0.57142857142em;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 1.4rem;
+    color: #1a599c;
+    text-transform: uppercase;
+}
+
+.channel-details button > img {
+    height: 1.6rem;
 }
 
 .related-videos {
