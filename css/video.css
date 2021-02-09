@@ -30,7 +30,7 @@ h2 {
     font-weight: normal;
 }
 
-h3, h4 {
+h3, h4, h5 {
     font-size: 1.4rem;
     line-height: 1.25em;
     margin-bottom: 0.21428571428em;
@@ -253,4 +253,24 @@ main {
 
 .video-comments {
     grid-area: video-comments;
+    padding: 1.2em;
+    border-top: 1px solid rgba(136, 136, 136, 0.4);
+    margin-top: 1.2em;
+}
+
+.video-comments > header {
+    display: grid;
+    grid: 1fr / 1fr max-content;
+    align-items: center;
+    
+}
+
+.comment-downtick, 
+.comment-uptick {
+	width: 2.8rem;
+}
+
+.comment-uptick,
+.comment-list-container {
+    display: none;
 }
