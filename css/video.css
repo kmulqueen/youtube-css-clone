@@ -30,7 +30,7 @@ h2 {
     font-weight: normal;
 }
 
-h3 {
+h3, h4 {
     font-size: 1.4rem;
     line-height: 1.25em;
     margin-bottom: 0.21428571428em;
@@ -136,6 +136,10 @@ main {
     align-items: center;
 }
 
+.channel-details > a:active {
+    outline: none;
+}
+
 .channel-details img {
     width: 3.4rem;
     height: 3.4rem;
@@ -157,6 +161,10 @@ main {
     font-size: 1.4rem;
     color: #1a599c;
     text-transform: uppercase;
+}
+
+.channel-details button:focus {
+    border: 1px solid black;
 }
 
 .channel-details button > img {
@@ -199,6 +207,48 @@ main {
     border-radius: 100%;
     background: white;
     box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+.related-videos > ul {
+    padding: 0 1.2em;
+}
+
+.related-videos > ul > li {
+    margin-bottom: 1.2em;
+    list-style: none;
+}
+
+.related-videos > ul > li:last-of-type {
+    margin-bottom: 0;
+}
+
+.related-videos > ul > li article {
+    min-height: 9rem;
+    max-height: 9rem;
+    overflow-y: hidden;
+    display: grid;
+    grid: repeat(2, max-content) 1fr/ repeat(2, 1fr);
+    column-gap: 0.8em;
+}
+
+.related-videos > ul > li img {
+    height: 100%;
+    width: 100%;
+    grid-row: span 3;
+}
+
+.related-videos > ul > li h4 {
+    max-height: 3.75em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.related-videos > ul > li p {
+    font-size: 1.2rem;
+    color: rgba(17, 17, 17, 0.6);
 }
 
 .video-comments {
