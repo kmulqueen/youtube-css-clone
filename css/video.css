@@ -284,7 +284,8 @@ main {
     padding: 1.2em 0;
 }
 
-.comment-form > img {
+.comment-form > img,
+.comment > img {
     width: 4.8rem;
     height: 4.8rem;
     border-radius: 50%;
@@ -302,4 +303,59 @@ main {
 .comment-form textarea::placeholder {
     color: rgba(135, 135, 135, 0.9);
     font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.comment {
+    font-size: 1.1rem;
+    padding: 1em;
+    color: rgba(17,17,17, 0.6);
+    border-bottom: 1px solid rgba(135, 135, 135, 0.4);
+    display: grid;
+    grid: repeat(3, max-content) / 4.8rem 1fr;
+    column-gap: 0.72727272727em;
+}
+
+.comment:last-of-type {
+    border-bottom: none;
+}
+
+.comment > img {
+    grid-row: span 3;
+}
+
+.comment > a {
+    font-size: 1.4rem;
+    color: #1a599c;
+}
+
+.my-comment > a > span {
+    background: #1a599c;
+    color: #fff;
+    border-radius: 8px;
+    padding: 1px 6px;
+    display: inline-block;
+}
+
+.comment > p {
+    color: #000;
+    font-size: 1.3rem;
+    margin: 0.33em 0;
+}
+
+.comment-status-separator {
+    font-size: 2rem;
+    line-height: 1.1rem;
+}
+
+.comment-statistics {
+    display: grid;
+    grid: 1fr / repeat(5, max-content);
+    column-gap: 4px;
+    align-items: center;
+}
+
+.comment-statistics > img {
+    margin-left: 8px;
+    width: 11px;
+    height: 10px;
 }
