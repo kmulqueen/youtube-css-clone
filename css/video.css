@@ -359,3 +359,33 @@ main {
     width: 11px;
     height: 10px;
 }
+
+.see-response-container,
+.hide-response-container {
+    display: grid;
+    grid: 1fr / 1fr;
+    place-items: center;
+}
+
+.see-response-container,
+.hide-response-container,
+.response-list {
+    grid-column: span 2;
+}
+
+.see-response-container > button,
+.hide-response-container > button {
+    outline: none;
+    border: none;
+    background: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: #1a599c;
+    padding: 0.71428571428em 0.57142857142em;
+}
+
+.response-list,
+.hide-response-container {
+    display: none;
+}
