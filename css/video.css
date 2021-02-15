@@ -1,15 +1,17 @@
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Global Styles */
 html, body {
     height: 100%;
 }
 
 html {
-    font-size: 10px;
+    font-size: 62.5%;
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
@@ -41,6 +43,7 @@ a {
     color: #111;
 }
 
+/* Mobile First - Portrait */
 body > header {
     padding: 0 0.8em;
     background: #1a599c;
@@ -154,13 +157,13 @@ main {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 0.57142857142em;
     outline: none;
     border: none;
     background: transparent;
     font-size: 1.4rem;
     color: #1a599c;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .channel-details button:focus {
@@ -404,4 +407,49 @@ main {
 .response > img {
     width: 2.6rem;
     height: 2.6rem;
+}
+
+/* Mobile - Landscape */
+@media (min-width: 550px) {
+    main {
+        grid-template-areas: 
+            "video-thumbnail"
+            "video-details"
+            "video-comments"
+            "related-videos";
+    }
+
+    .video-comments {
+        margin-top: 0;
+        border-top: none;
+        border-bottom: 1px solid rgba(136, 136, 136, 0.4)
+    }
+
+    .related-videos > ul {
+        padding: 0 1.2em;
+        display: grid;
+        grid: auto-flow max-content / repeat(2, 1fr);
+        gap: 1.2em;
+        margin-bottom: 2.4em;
+    }
+
+    .related-videos > ul > li {
+        margin-bottom: 0;
+    }
+
+    .related-videos > ul > li article {
+        min-height: inherit;
+        max-height: inherit;
+        display: block;
+    }
+
+    .related-videos > ul > li img {
+        height: 26.6vw;
+        min-height: 14.1rem;
+        max-height: 20.2rem;
+    }
+
+    .related-video-details h4 {
+        padding-top: 0.28571428571em;
+    }
 }
