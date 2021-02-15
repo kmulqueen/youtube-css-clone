@@ -31,7 +31,7 @@ seeReponseButtons.forEach((button) => {
 
     container.style.display = "none";
     hideResponseButton.style.display = "grid";
-    responseList.style.display = "block";
+    responseList.style.display = "grid";
   });
 });
 
