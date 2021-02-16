@@ -468,17 +468,31 @@ main {
 
 /* Tablet - Landscape */
 @media (min-width: 800px) and (orientation: landscape) {
+    body > header {
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        right: 0;
+        height: 5.2rem;
+    }
     main {
         grid:
             "video-thumbnail related-videos" max-content
             "video-details related-videos" max-content
             "video-comments related-videos" 1fr
             / 1fr 25.6rem;
+        margin-top: 5.2rem;
     }
 
     .related-videos {
         padding-left: 8px;
         padding-right: 8px;
+        position: fixed;
+        width: 25.6rem;
+        top: 5.2rem;
+        right: 0;
+        bottom: 0;
+        overflow: scroll;
     }
 
     .related-videos > ul {
@@ -502,6 +516,11 @@ main {
     main {
         grid-template-columns: 1fr 50rem;
     }
+
+    .related-videos {
+        width: 50rem;
+    }
+    
     .related-videos > ul {
         grid-template-columns: repeat(2, 1fr);
     }
