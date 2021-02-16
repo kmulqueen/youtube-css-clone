@@ -453,3 +453,15 @@ main {
         padding-top: 0.28571428571em;
     }
 }
+
+/* Tablet - Portrait */
+@media (min-width: 600px) {
+    .related-videos > ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .related-videos > ul > li img {
+        height: 17.5vw;
+        min-height: 13.1rem;
+        max-height: inherit;
+    }
+}
