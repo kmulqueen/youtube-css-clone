@@ -465,3 +465,35 @@ main {
         max-height: inherit;
     }
 }
+
+/* Tablet - Landscape */
+@media (min-width: 800px) and (orientation: landscape) {
+    main {
+        grid:
+            "video-thumbnail related-videos" max-content
+            "video-details related-videos" max-content
+            "video-comments related-videos" 1fr
+            / 1fr 25.6rem;
+    }
+
+    .related-videos {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .related-videos > ul {
+        padding-left: 0;
+        padding-right: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .related-videos > ul > li img {
+        height: 13.5rem;
+        min-height: inherit;
+        max-height: inherit;
+    }
+
+    .video-comments {
+        border-bottom: none;
+    }
+}
